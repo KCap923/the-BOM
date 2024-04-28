@@ -8,29 +8,20 @@ prompt(
   "A square is going to appear before you. \n Can you guess what color it will be?"
 );
 
-for (let i = 0; i <= 10; i++) {
-let sqDiv = document.createElement("div")
+// *******************************This is not working!!!******************************************
 
-}
-
-function newColors(sqDiv) {
+function newColors(div1) {
 
 const colors = ["pink", "red", "orange", "blue", "purple", "yellow", "green"];
-sqDiv.style.backgroundColor = `rgba(${Math.round(
-  Math.random() * 255
-)} ${Math.round(Math.random() * 255)}, ${Math.round(
-  Math.random() * 255
-)}, 255)`;
-
-
 const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-sqDiv.style.backgroundColor = randomColor;
+div1.style.backgroundColor = randomColor;
+}
+
+function handleClick(div1) {
+
+newColors(div1);
 
 }
 
-function handleClick() {
-
-newColors();
-
-}
+console.log(div1)
