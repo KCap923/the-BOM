@@ -40,9 +40,14 @@ h1 {
   font-style: normal;
 }
 
-li {
-  color: red;
-  list-style: none;
-  display: flex;
-  justify-content: center;
+div {
+  margin-left: 73vh;
+  margin-top: 10vh;
+  border: 10px double whitesmoke;
+  /* background-color: red; */
+  width: 270px;
+  height: 250px;
+  animation: rubberBand;
+  animation-duration: 3s;
 }
+
